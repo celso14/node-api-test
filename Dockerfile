@@ -2,9 +2,9 @@ FROM node:16.17-alpine
 
 RUN npm install -g npm@8.15.0
 
-WORKDIR /usr/app
+WORKDIR /usr/src/app
 
-COPY package.json ./
+COPY package*.json ./
 
 RUN npm install --legacy-peer-deeps
 

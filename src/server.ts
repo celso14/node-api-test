@@ -5,7 +5,7 @@ const port = 5000;
 
 //Endpoints
 api.get('/',(req:Request, res:Response) => {
-    res.send('Hello World! TESTE')
+    res.send('Hello World! TESTE teste 3')
 });
 
 
