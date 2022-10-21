@@ -1,11 +1,11 @@
 import express,{Request, Response} from 'express';
 
 const api = express();
-const port = 3000;
+const port = 5000;
 
 //Endpoints
 api.get('/',(req:Request, res:Response) => {
-    res.send('Hello World!')
+    res.send('Hello World! TESTE')
 });
 
 

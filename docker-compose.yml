@@ -13,6 +13,19 @@ services:
       - POSTGRES_DB=teste
     volumes:
       - pgdata:/var/lib/postgresql
+  
+  app:
+    build: .
+    container_name: api_teste_app
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/usr/app
+    links:
+      - database
+    depends_on:
+      - database
+    
 
 volumes:
   pgdata:
